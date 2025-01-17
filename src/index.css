@@ -32,5 +32,19 @@ body{
     color: #FFFFFF;
     background: var(--bg-color);
     user-select: none;
+}
+body h1{
+    font-family: 'Chillax';
+}
+body h3{
+    font-family: 'Chillax';
+}
+body h2{
+    font-family: 'Chillax';
+}
+body p{
+    font-family: 'Chillax';
+}
+body span{
     font-family: 'Chillax';
 }
