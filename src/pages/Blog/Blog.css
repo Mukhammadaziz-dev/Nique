@@ -1,0 +1,283 @@
+.Blog{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: space-between;
+}
+.BlogOnMenu{
+    width: 50%;
+    height: 100vh;
+    background: url(../../Images/blogBg.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.BlogOnMenu a{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.BlogOnMenu h2{
+    margin-top: 10vmax;
+    font-family: 'Bitter', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #FACE8D;
+}
+.BlogOnMenu h1{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 5vmax;
+}
+.BlogOnMenu p{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.AlotRooms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.AlotRoom {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 76.19%;
+}
+.AlotRoomTextBox span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: #FACE8D;
+}
+.AlotRoomTextBox h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38.4px;
+}
+.AlotRoomTextBox p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+.BlogBottom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: var(--white-color);
+    width: 520px;
+    height: 68px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.BlogBottom i {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+}
+.BlogBottom i:hover {
+    background: #111111;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.BlogBottom a {
+    font-size: 16px;
+    font-weight: 500;  
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    color: #081212;
+    cursor: pointer;
+}
+.BlogBottom a:hover {
+    background: #111111;
+    color: var(--black-color);
+}
+.BlogFoods{
+    padding-top: 96px;
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.BlogFoods::-webkit-scrollbar{
+    background: transparent;
+    width: 8px;
+}
+.BlogFoods::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}
+.BlogFooter{
+    margin-top: 96px;
+    width: 80%;
+    font-family: 'Myfont', sans-serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 96px;
+}
+.flogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.flogo .loggo{
+    transition: 0.5s ease;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.flogo p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff8c;
+    cursor: pointer;
+} 
+.fpages{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.fpages h2{
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+.fpages a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+
+.futil{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.futil h2{
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+.futil a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+.flogo h1:hover, .fpages h2:hover, .futil h2:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    filter: drop-shadow(0px 10px 2px rgba(185, 185, 185, 0.747));
+}
+@media screen and (max-width: 600px) {
+    .BlogFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .BlogOnMenu {
+        width: 100%;
+    }
+    .BlogBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .BlogBottom i {
+        border-radius: 10px;
+    }
+    .BlogBottom a {
+        border-radius: 10px;
+    }
+    .BlogFoods {
+        width: 100%;
+    }
+    .BlogBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .BlogBottom i {
+        border-radius: 10px;
+    }
+    .BlogBottom a {
+        border-radius: 10px;
+    }
+    .ShopFoods {
+        width: 100%;
+        overflow-y: unset;
+    }
+    }
+@media screen and (max-width: 600px) {
+    .AlotRoom {
+        display: inline-block;
+        text-align: center;
+    }
+    .AlotRoom img {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .BlogBottom a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .BlogBottom i {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .BlogBottom i {
+        display: none;
+    }
+}

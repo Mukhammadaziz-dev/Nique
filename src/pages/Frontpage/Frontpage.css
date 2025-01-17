@@ -1,0 +1,182 @@
+.FrontpageContainer {
+    padding-top: 2vmax;
+    width: 100%;
+    height: 100vh;
+    background: url(../../Images/FrontPageBgImgage.png) no-repeat;
+    background-size: 100% 100%;  
+}
+
+.FronpageTop a {
+    padding-top: 64px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-color);   
+}
+.FrontpageCenter h3 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 200px;
+    font-weight: 400;
+    line-height: 72px;
+    color: #EEBF79;       
+}
+.FrontpageCenter h1 {
+    font-size: 160px;
+    font-weight: 500;
+    line-height: 144px;
+    text-align: center;    
+}
+.FrontpageCenter p {
+    text-align: center;
+    margin-top: 32px;
+    width: 600px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.FrontpageBottom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: var(--white-color);
+    width: 520px;
+    height: 68px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+.FrontpageBottom i {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+}
+.FrontpageBottom i:hover {
+    background: #111111;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.FrontpageBottom a {
+    font-size: 16px;
+    font-weight: 500;  
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    color: #081212;
+    cursor: pointer;
+}
+.FrontpageBottom a:hover {
+    background: #111111;
+    color: var(--black-color);
+}
+.linkActive.active {
+    background: #111111;
+    color: var(--black-color);
+}
+.linkNoAcrive {
+    background: transparent;
+
+}
+@media screen and (max-width: 1550px) {
+    .FronpageTop a {
+        margin-top: -30px;
+    }
+    .FrontpageCenter h3 {
+       margin-top: 100px;
+    }
+    .FrontpageBottom {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .FrontpageContainer{
+        background-image: none;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .FronpageTop a {
+        margin-top: -14px;
+    }
+    .FrontpageCenter h3{
+        font-size: 3.5rem;
+        margin-top: 100px;
+    }
+    .FrontpageCenter h1 {
+        font-size: 5rem;
+        margin-top: -30px;
+    }
+    .FrontpageCenter p {
+        margin-top: -30px;
+        font-size: 1.2rem;
+    }
+    .FrontpageBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .FrontpageBottom i {
+        border-radius: 10px;
+    }
+    .FrontpageBottom a {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .FrontpageCenter p {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .FrontpageCenter h3 {
+        font-size: 2.5rem;
+    }
+    .FrontpageCenter h1 {
+        font-size: 4rem;
+        margin-top: -50px;
+    }
+    .FrontpageCenter p {
+        font-size: 1rem;
+    }
+    .FrontpageBottom a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .FrontpageBottom i {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .FrontpageCenter h1 {
+        font-size: 3.5rem;
+        margin-top: -50px;
+    }
+    .FrontpageBottom i {
+        display: none;
+    }
+}

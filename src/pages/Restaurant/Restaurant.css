@@ -1,0 +1,195 @@
+.RestaurantContainer {
+    padding-top: 2vmax;
+    width: 100%;
+    height: 100vh;
+    background: url() no-repeat;
+    background-size: 100% 100%;  
+    overflow: hidden;
+    position: relative;
+  }
+.RestaurantContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url("../../Images/all_bg.png") repeat-x;
+    background-size: cover;
+    animation: scroll-image 50s linear infinite;
+    z-index: -1000;
+}
+  
+@keyframes scroll-image {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+} 
+
+.RestaurantTop a {
+    padding-top: 64px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-color);   
+}
+.RestaurantCenter h3 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 200px;
+    font-weight: 400;
+    line-height: 72px;
+    color: #EEBF79;       
+}
+.RestaurantCenter h1 {
+    font-size: 160px;
+    font-weight: 500;
+    line-height: 144px;
+    text-align: center;
+    margin-bottom: 210px;    
+}
+.RestaurantBottom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: var(--white-color);
+    width: 520px;
+    height: 68px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RestaurantBottom i {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+}
+.RestaurantBottom i:hover {
+    background: #111111;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.RestaurantBottom a {
+    font-size: 16px;
+    font-weight: 500;  
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    color: #081212;
+    cursor: pointer;
+}
+.RestaurantBottom a:hover {
+    background: #111111;
+    color: var(--black-color);
+}
+.linkActive.active {
+    background: #111111;
+    color: var(--black-color);
+}
+.linkNoAcrive {
+    background: transparent;
+
+}
+@media screen and (max-width: 1550px) {
+    .RestaurantTop a {
+        margin-top: -30px;
+    }
+    .RestaurantCenter h3 {
+       margin-top: 100px;
+    }
+    .RestaurantBottom {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .RestaurantContainer{
+        background-image: none;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .RestaurantTop a {
+        margin-top: -14px;
+    }
+    .RestaurantCenter h3{
+        font-size: 3.5rem;
+        margin-top: 100px;
+    }
+    .RestaurantCenter h1 {
+        font-size: 5rem;
+        margin-top: -30px;
+    }
+    .RestaurantCenter p {
+        margin-top: -30px;
+        font-size: 1.2rem;
+    }
+    .RestaurantBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .RestaurantBottom i {
+        border-radius: 10px;
+    }
+    .RestaurantBottom a {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .RestaurantCenter p {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .RestaurantCenter h3 {
+        font-size: 2.5rem;
+    }
+    .RestaurantCenter h1 {
+        font-size: 4rem;
+        margin-top: -50px;
+    }
+    .RestaurantCenter p {
+        font-size: 1rem;
+    }
+    .RestaurantBottom a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .RestaurantBottom i {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .RestaurantCenter h1 {
+        font-size: 3.5rem;
+        margin-top: -50px;
+    }
+    .RestaurantBottom i {
+        display: none;
+    }
+}

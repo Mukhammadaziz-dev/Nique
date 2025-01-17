@@ -1,0 +1,420 @@
+.Menu{
+    width: 100%;
+    display: flex;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    background: black;
+}
+.OnMenu{
+    width: 50%;
+    height: 100vh;
+    background: url(../../Images/ourback.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.OnMenu a{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.OnMenu h2{
+    margin-top: 10vmax;
+    font-family: 'Bitter', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #FACE8D;
+}
+.OnMenu h1{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 8vmax;
+}
+.OnMenu p{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.FrontpageBottom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: var(--white-color);
+    width: 520px;
+    height: 68px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+.FrontpageBottom i {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+}
+.FrontpageBottom i:hover {
+    background: #111111;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.FrontpageBottom a {
+    font-size: 16px;
+    font-weight: 500;  
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    color: #081212;
+    cursor: pointer;
+}
+.FrontpageBottom a:hover {
+    background: #111111;
+    color: var(--black-color);
+}
+.Eating{
+    font-family: 'MyFont', sans-serif;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.EatingNaw{
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+.EatingNaw a{
+    color: #FFFFFFCC;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+.EatingNaw a::before{
+    content: '';
+    width: 100%;
+    border: 1px solid #FACE8D;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.5s ease;
+    scale: 0;
+}
+.EatingNaw a:hover::before{
+    scale: 1;
+    transition: 0.7s ease;
+}
+.MenuFoods{
+    margin-top: 20px;
+    width: 90%;
+    height: 85vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.MenuFoods::-webkit-scrollbar{
+    background: transparent;
+    width: 8px;
+}
+.MenuFoods::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}
+.Starters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Starters h1{
+    margin-left: 90px;
+    font-family: 'MyFont2', sans-serif;
+    color: #FACE8D;
+    font-size: 64px;
+    font-weight: 400;
+}
+.Starters > div{
+    margin: 16px auto;
+    width: 80%;
+    border-radius: 16px;
+    height: 104px;
+    column-gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 20px;
+    border: 1px solid rgba(253, 253, 253, 0.062);
+}
+.Starters > div:hover{
+    border: 1px solid #FACE8D;
+    box-shadow: 0px 0px 20px #FACE8D;
+    transition: 0.7s ease;
+}
+.InTextPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Starters img{
+    width: 90px;
+    height: 72px;
+    border-radius: 10px;
+}
+.InText{
+    width: 80%;
+}
+.InTextPrice h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 50%;
+}
+.InTextPrice box-icon{
+    width: 16px;
+    height: 16px;
+}
+.InText > p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff8c;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 80%;
+}
+.Starters2{
+    margin-top: 70px;
+}
+.InTextPrice p{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.InTextPrice p span{
+    color: #ffffff8c;
+    text-decoration-line: line-through;
+}
+.MenuFooter{
+    margin-top: 96px;
+    width: 80%;
+    font-family: 'Myfont', sans-serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.flogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.flogo .loggo{
+    transition: 0.5s ease;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.flogo p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff8c;
+    cursor: pointer;
+} 
+.fpages{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.fpages h2{
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+.fpages a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+
+.futil{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.futil h2{
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+.futil a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+.flogo h1:hover, .fpages h2:hover, .futil h2:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    filter: drop-shadow(0px 10px 2px rgba(185, 185, 185, 0.747));
+}
+@media screen and (max-width: 600px) {
+    .MenuFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .FrontpageCenter h3 {
+       margin-top: 100px;
+    }
+    .FrontpageBottom {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .FrontpageContainer{
+        background-image: none;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .FrontpageBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .FrontpageBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .FrontpageBottom i {
+        border-radius: 10px;
+    }
+    .FrontpageBottom a {
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .FrontpageBottom a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .FrontpageBottom i {
+        font-size: 0.8rem;
+    }
+    .Starters h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .FrontpageBottom i {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .OnMenu{
+        width: 100%;
+        background-size: 100% 100%;
+        height: 600px
+    }
+    .Eating{
+        width: 100%;
+    }
+    .EatingNaw{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .oxirgi::before{
+        content: '';
+        display: none;
+    }
+    .EatingNaw{
+        display: flex;
+        column-gap: 25px;
+    }
+    .EatingNaw a::before{
+        content: '';
+        position: absolute;
+        right: -10px;
+        bottom: 1px;
+        padding: 0px 20px;
+    }
+
+    .Starters > div{
+        padding: 0 35px;
+    }
+}
+    @media screen and (max-width: 500px){
+        .EatingNaw{
+            display: flex;
+            column-gap: 20px;
+        }
+        .Starters > div{
+            padding: 0 45px;
+        }
+    }
+    @media screen and (max-width: 400px){
+        .EatingNaw{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }

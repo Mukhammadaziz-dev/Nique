@@ -1,0 +1,440 @@
+.WorkShop{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+}
+.WorkShopOnMenu{
+    width: 50%;
+    height: 100vh;
+    background: url(../../Images/WorkShop.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.WorkShopOnMenu a{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.WorkShopOnMenu h2{
+    margin-top: 10vmax;
+    font-family: 'Bitter', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #FACE8D;
+}
+.WorkShopOnMenu h1{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 5vmax;
+}
+.WorkShopOnMenu p{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.WorkshopBottom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: var(--white-color);
+    width: 520px;
+    height: 68px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.WorkshopBottom i {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+}
+.WorkshopBottom i:hover {
+    background: #111111;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.WorkshopBottom a {
+    font-size: 16px;
+    font-weight: 500;  
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    color: #081212;
+    cursor: pointer;
+}
+.WorkshopBottom a:hover {
+    background: #111111;
+    color: var(--black-color);
+}
+.Foods{
+    margin-top: 20px;
+    width: 100%;
+    height: 97vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Eating::-webkit-scrollbar{
+    background: transparent;
+    width: 8px;
+}
+.Eating::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}
+.ReserveYourSpot {
+    width: 80%;
+}
+.ReserveYourSpot span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+.ReserveYourSpot h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 8px;
+}
+.ReserveYourSpot p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    margin-top: 16px;    
+}
+
+.ReserveYourSpot .ButtonAndPrice {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+.ReserveYourSpot .ButtonAndPrice a {
+    width: 181px;
+    height: 60px;
+    background: #F8D49E;
+    border: none;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #081212;
+    transition: all ease 0.7s;
+}
+.ReserveYourSpot .ButtonAndPrice a:hover {
+    transform: scale(1.1);
+}
+.ReserveYourSpot .ButtonAndPrice span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: #FFFFFF;
+}
+.Details {
+    width: 80%;
+    margin-top: 80px;
+}
+.Details h2 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;   
+    color: #FACE8D; 
+    margin-bottom: 32px;
+}
+.Catigory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.Catigory h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.Catigory p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    display: flex;
+    align-items: center;
+}
+.Catigory .Teacher {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.CatigoryLine {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF1A;
+
+}
+.FoodMenu {
+    width: 80%;
+    margin-top: 80px;
+}
+.FoodMenu h2 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    color: #FACE8D;
+}
+.FoodName {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    margin-top: 32px;
+}
+.TextBox h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.TextBox p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+.TeacherBox {
+    width: 80%;
+    margin-top: 80px;
+}
+.TeacherBox h2 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    color: #FACE8D;
+}
+.TeacherInformation {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    margin-top: 32px;
+}
+.TeacherText h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38.4px;
+}
+.TeacherText p {
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;  
+    margin-top: 4px;  
+}
+.TeacherSotialMedia {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.TeacherSotialMedia i {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.Footer{
+    margin-top: 96px;
+    width: 80%;
+    font-family: 'Myfont', sans-serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.flogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.flogo .loggo{
+    transition: 0.5s ease;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.flogo p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff8c;
+    cursor: pointer;
+} 
+.fpages{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.fpages h2{
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+.fpages a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+
+.futil{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.futil h2{
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+.futil a{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+.flogo h1:hover, .fpages h2:hover, .futil h2:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    filter: drop-shadow(0px 10px 2px rgba(185, 185, 185, 0.747));
+}
+@media screen and (max-width: 600px) {
+    .Footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Foods {
+        overflow-y:unset;
+        margin-top: 80px;
+    }
+    .WorkShopOnMenu {
+        width: 100%;
+    }
+    .WorkshopBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .WorkshopBottom i {
+        border-radius: 10px;
+    }
+    .WorkshopBottom a {
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .WorkshopBottom a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .WorkshopBottom i {
+        font-size: 0.8rem;
+    }
+    .Starters h1 {
+        font-size: 2rem;
+    }
+    .Details{
+        width: 95%;
+    }
+    .Details h2 {
+        text-align: center;
+    }
+    .Catigory {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .Catigory p {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .FoodMenu {
+        width: 95%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .FoodMenu h2 {
+        text-align: center;
+    }
+    .TeacherBox {
+        width: 95%;
+    }
+    .TeacherBox h2 {
+        text-align: center;
+    }
+    .TeacherInformation {
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .TeacherSotialMedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .WorkshopBottom i {
+        display: none;
+    }
+}

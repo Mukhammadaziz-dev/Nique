@@ -1,0 +1,293 @@
+.ReservationLeftRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.ReservationLeft {
+    height: 100vh;
+    background: url(../../Images/BookTable.png) no-repeat;
+    background-size: 100% 100%;
+    width: 840px;
+}
+.LeftTop a {
+    padding-top: 64px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-color);   
+}
+.LeftCenter h3 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 339px;
+    font-weight: 400;
+    line-height: 72px;
+    color: #EEBF79;       
+}
+.LeftCenter h1 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+    text-align: center; 
+    margin-bottom: 400px;   
+}
+.LeftBottom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: var(--white-color);
+    width: 520px;
+    height: 68px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.LeftBottom i {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+}
+.LeftBottom i:hover {
+    background: #111111;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.LeftBottom a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;   
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    color: #081212;
+    cursor: pointer;
+}
+.LeftBottom a:hover {
+    background: #111111;
+    color: var(--black-color);
+}
+.linkActive.active {
+    background: #111111;
+    color: var(--black-color);
+}
+.linkNoAcrive {
+    background: transparent;
+}
+.ReservationRight {
+    width: 840px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inRight {
+    max-width: 560px;
+}
+.ReservationRight h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;    
+}
+.ReservationRight p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; 
+    margin-top: 16px;   
+}
+.inpBox {
+    margin-top: 48px;
+    display: inline-block;
+}
+.inpBox span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+.inpBox input {
+    width: 560px;
+    height: 60px;
+    border: 1px solid #FFFFFF1A;
+    outline: none;
+    padding: 15.5px 0 15.5px 24px ;
+    background: transparent;
+    border-radius: 10px;
+    margin-top: 16px;
+    color: var(--black-color);
+    cursor: carter;
+}
+.inpBoxs {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.inpBoxs input {
+    width: 264px;
+}
+.inRight button {
+    margin-top: 48px;
+    width: 560px;
+    height: 60px;
+    background: #F8D49E;
+    border: none;
+    border-radius: 500px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all ease 0.7s;
+    
+}
+.inRight button:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1650px) {
+    .LeftCenter h3 {
+        margin-top: 300px;
+    } 
+    .LeftBottom {
+        margin-top: 250px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .LeftTop a {
+        margin-top: -34px;
+    }
+    .LeftCenter h3 {
+        margin-top: 200px;
+    } 
+    .LeftBottom {
+        margin-top: 150px;
+    } 
+
+}
+@media screen and (max-width: 1540px) {
+    .LeftCenter h1 {
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .ReservationLeftRight {
+        display: inline-block;
+        width: 100%;
+    }
+    .ReservationLeft {
+        width: 100%;
+        background-image: none;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .LeftCenter {
+        margin-top: -200px;
+    }
+    .ReservationRight {
+        width: 100%;
+        margin-top: -70px;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .inRight {
+        width: 100%;
+    }
+    .LeftBottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .inRight button {
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 610px) {
+    .inRight {
+        width: 100%;
+    }
+    .inRight p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inpBox {
+        width: 100%;
+    }
+    .inpBox input {
+        width: 90% ;
+    }
+    .inpBoxs {
+        flex-direction: column;
+        width: 100%;
+    }
+    .inpBoxs input {
+        width: 90%;
+    }
+    .inRight button {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .LeftCenter h3 {
+        font-size: 3.5rem;
+    }
+    .LeftCenter h1 {
+        font-size: 3rem;
+        margin-top: -20px;
+    }
+    .LeftBottom a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .LeftBottom i {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .LeftCenter h3 {
+        font-size: 3rem;
+    }
+    .LeftCenter h1 {
+        font-size: 2.5rem;
+        margin-top: -20px;
+    }
+    .LeftBottom i {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+  .inRight h1 {
+    font-size: 1.5rem;
+  }
+  
+  .inRight p {
+    font-size: 0.9rem;
+  }
+  
+  .inRight button {
+    font-size: 0.9rem;
+  }
+}
