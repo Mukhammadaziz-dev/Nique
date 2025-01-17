@@ -4,6 +4,10 @@
     font-family: 'Bitter';
     src: url('fonts/Bitter Rose DEMO.otf') format('opentype');
 }
+@font-face {
+    font-family: 'Chillax';
+    src: url(./fonts/Bitter\ Rose\ DEMO.otf);
+}
 *{
     margin: 0;
     padding: 0;
