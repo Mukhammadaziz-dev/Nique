@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Contact.css"
+import { Button } from "react-scroll";
 
 const Contact = () => {
 
@@ -67,7 +68,7 @@ const Contact = () => {
                             <span>Message</span> <br />
                             <input type="text" placeholder="Your message" />
                         </div>
-                        <button>Book a table</button>
+                        <NavLink to="/blogpost">Book a table</NavLink>
                     </div>
                 </div>
             </div>

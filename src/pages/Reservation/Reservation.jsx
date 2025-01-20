@@ -76,7 +76,7 @@ const Reservation = () => {
                                 <input type="time" placeholder="Time" />
                             </div>
                         </div>
-                        <button>Book a table</button>
+                        <NavLink to="/contact">Book a table</NavLink>
                     </div>
                 </div>
             </div>

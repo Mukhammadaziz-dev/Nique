@@ -145,7 +145,10 @@
     color: var(--black-color);
     cursor: carter;
 }
-.inRight button {
+.inRight a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 48px;
     width: 560px;
     height: 60px;
@@ -160,7 +163,7 @@
     cursor: pointer;
     transition: all ease 0.7s;
 }
-.inRight button:hover {
+.inRight a:hover {
     transform: scale(1.1);
 }
 @media screen and (max-width: 1650px) {
@@ -215,7 +218,7 @@
         border-radius: 10px 10px 0 0;
         width: 100%;
     }
-    .inRight button {
+    .inRight a {
         margin-bottom: 100px;
     }
 }
@@ -237,7 +240,7 @@
     .inpMessageBox input {
         min-width: 90%;
     }
-    .inRight button {
+    .inRight a {
         width: 90%;
     }
 }
@@ -279,7 +282,7 @@
     font-size: 0.9rem;
   }
   
-  .inRight button {
+  .inRight a {
     font-size: 0.9rem;
   }
 }
