@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Contact.css"
-import { Button } from "react-scroll";
 
 const Contact = () => {
 
@@ -58,11 +57,11 @@ const Contact = () => {
                         </p>
                         <div className="inpBox">
                             <span>Name</span> <br />
-                            <input type="text" placeholder="Enter your name" />
+                            <input className="inpBoxInput" type="text" placeholder="Enter your name" />
                         </div>
                         <div className="inpBox">
                             <span>Email</span> <br />
-                            <input type="email" placeholder="Your email address" />
+                            <input className="inpBoxInput" type="email" placeholder="Your email address" />
                         </div>
                         <div className="inpMessageBox">
                             <span>Message</span> <br />

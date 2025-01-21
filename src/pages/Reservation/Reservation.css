@@ -250,6 +250,9 @@
     }
     .inRight a {
         width: 90%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (max-width: 500px) {

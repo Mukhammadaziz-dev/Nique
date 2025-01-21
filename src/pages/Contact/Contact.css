@@ -118,7 +118,7 @@
     line-height: 25.6px;
 }
 .ContactRight .inRight .inpBox input {
-    width: 560px;
+    max-width: 560px;
     height: 60px;
     border: 1px solid #FFFFFF1A;
     outline: none;
@@ -221,27 +221,30 @@
     .inRight a {
         margin-bottom: 100px;
     }
-}
-@media screen and (max-width: 610px) {
+    .inpBox {
+        width: 100%;
+    }
+    .inpBoxInput {
+        width: 10px ;
+    }
     .inRight {
         width: 100%;
     }
+}
+@media screen and (max-width: 610px) {
     .inRight p {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-    }
-    .inpBox {
-        width: 100%;
-    }
-    .inpBox input {
-        width: 90% ;
     }
     .inpMessageBox input {
         min-width: 90%;
     }
     .inRight a {
         width: 90%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (max-width: 500px) {
